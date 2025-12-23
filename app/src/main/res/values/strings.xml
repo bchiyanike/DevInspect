@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Device Inspector</string>
+    <string name="tab_device">Device</string>
+    <string name="tab_battery">Battery</string>
+    <string name="tab_files">Files</string>
+    <string name="tab_tools">Tools</string>
+</resources>

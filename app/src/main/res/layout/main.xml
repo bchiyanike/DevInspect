@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/fragment_background">
+
+        <!-- Tab strip with improved styling -->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryGreenDark"
+            android:divider="@null"
+            android:showDividers="none"
+            android:measureWithLargestChild="false"/>
+
+        <!-- Tab content area -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/fragment_background">
+
+            <!-- Tab 1: Device Info -->
+            <FrameLayout
+                android:id="@+id/tabDeviceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:visibility="visible"/>
+
+            <!-- Tab 2: Battery -->
+            <FrameLayout
+                android:id="@+id/tabBattery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:visibility="gone"/>
+
+            <!-- Tab 3: File Explorer -->
+            <FrameLayout
+                android:id="@+id/tabFileExplorer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:visibility="gone"/>
+
+            <!-- Tab 4: Quick Tools -->
+            <FrameLayout
+                android:id="@+id/tabQuickTools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

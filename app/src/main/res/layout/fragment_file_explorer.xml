@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fragment_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/fragment_background">
+
+        <!-- File Explorer Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="File Explorer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryGreenDark"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Internal Storage -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Internal Storage:"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvStorageInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textColor="@color/textSecondary"
+            android:background="@drawable/card_background_green"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Root Directory -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Root Directory:"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvRootInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textColor="@color/textSecondary"
+            android:background="@drawable/card_background_green"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- SD Card / External Storage -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="External Storage (SD Card):"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvSdCardInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textColor="@color/textSecondary"
+            android:background="@drawable/card_background_green"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Buttons Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnRefreshStorage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Refresh"
+                android:layout_marginEnd="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_button_green"
+                android:textColor="@color/button_text"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnListFiles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="List Files"
+                android:layout_marginStart="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_button_green"
+                android:textColor="@color/button_text"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Buttons Row 2 -->
+        <Button
+            android:id="@+id/btnCheckPermissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Storage Access"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button_green"
+            android:textColor="@color/button_text"
+            android:textStyle="bold"/>
+
+        <!-- Information Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: Some file operations may require additional permissions. Use 'Check Storage Access' to verify."
+            android:textSize="12sp"
+            android:textColor="@color/textHint"
+            android:padding="8dp"
+            android:background="@color/section_background"/>
+
+    </LinearLayout>
+</ScrollView>

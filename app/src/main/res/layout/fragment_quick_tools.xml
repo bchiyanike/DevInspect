@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fragment_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/fragment_background">
+
+        <!-- Quick Tools Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quick Tools"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryGreenDark"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Clipboard Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clipboard Manager:"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvClipboardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clipboard: Empty"
+            android:textColor="@color/textSecondary"
+            android:background="@drawable/card_background_green"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnClipboardCopy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Copy Text"
+                android:layout_marginEnd="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_button_green"
+                android:textColor="@color/button_text"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_copy"
+                android:drawablePadding="4dp"/>
+
+            <Button
+                android:id="@+id/btnClipboardPaste"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paste Text"
+                android:layout_marginStart="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_button_green"
+                android:textColor="@color/button_text"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_paste"
+                android:drawablePadding="4dp"/>
+        </LinearLayout>
+
+        <!-- Flashlight Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flashlight:"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvFlashlightStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Not available"
+            android:textColor="@color/textHint"
+            android:background="@drawable/card_background_green"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnFlashlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn On Flashlight"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button_green"
+            android:textColor="@color/button_text"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_flashlight"
+            android:drawablePadding="8dp"/>
+
+        <!-- System Tools -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="System Tools:"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnOpenSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Settings"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button_green"
+            android:textColor="@color/button_text"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_settings"
+            android:drawablePadding="8dp"/>
+
+        <!-- Sharing Tools -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sharing Tools:"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnShareText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Device Info"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button_green"
+            android:textColor="@color/button_text"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_share"
+            android:drawablePadding="8dp"/>
+
+        <Button
+            android:id="@+id/btnOpenBrowser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Browser"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button_green"
+            android:textColor="@color/button_text"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_browser"
+            android:drawablePadding="8dp"/>
+
+        <!-- Information Text -->
+        <TextView
+            android:id="@+id/tvFlashlightInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flashlight turns off automatically when leaving this screen"
+            android:textSize="12sp"
+            android:textColor="@color/textHint"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/section_background"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: These are quick-access tools. Some features may require additional permissions or compatible apps."
+            android:textSize="12sp"
+            android:textColor="@color/textHint"
+            android:padding="12dp"
+            android:background="@color/section_background"/>
+
+    </LinearLayout>
+</ScrollView>

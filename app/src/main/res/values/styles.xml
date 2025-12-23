@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme - Pure Green/Brown Theme -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- ActionBar styling -->
+        <item name="android:actionBarStyle">@style/GreenActionBar</item>
+        <item name="android:actionMenuTextColor">@color/textOnDark</item>
+
+        <!-- Window and background styling -->
+        <item name="android:windowBackground">@color/fragment_background</item>
+        <item name="android:colorBackground">@color/fragment_background</item>
+        <item name="android:colorBackgroundCacheHint">@color/fragment_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Panel backgrounds -->
+        <item name="android:panelBackground">@color/card_background</item>
+        <item name="android:panelFullBackground">@color/card_background</item>
+        <item name="android:panelColorBackground">@color/card_background</item>
+
+        <!-- Text colors - USING NEW BROWN/GREEN PALETTE -->
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        <item name="android:textColorPrimaryInverse">@color/textOnDark</item> <!-- Changed from textInverse -->
+        <item name="android:textColorSecondaryInverse">@color/pale_green</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="android:textColorLink">@color/primaryGreen</item>
+        <item name="android:textColorLinkInverse">@color/light_green</item>
+
+        <!-- List styling -->
+        <item name="android:listSelector">@drawable/list_selector_green</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_selector_green</item>
+        <item name="android:listViewStyle">@style/GreenListView</item>
+        <item name="android:listPreferredItemHeight">48dp</item>
+
+        <!-- Button styling -->
+        <item name="android:buttonStyle">@style/GreenButton</item>
+
+        <!-- Tab styling -->
+        <item name="android:tabWidgetStyle">@style/GreenTabWidget</item>
+
+        <!-- EditText styling -->
+        <item name="android:editTextStyle">@style/GreenEditText</item>
+
+        <!-- TextView styling -->
+        <item name="android:textViewStyle">@style/GreenTextView</item>
+
+        <!-- Spinner styling -->
+        <item name="android:spinnerStyle">@style/GreenSpinner</item>
+
+        <!-- Progress bar styling -->
+        <item name="android:progressBarStyleHorizontal">@style/GreenProgressBar</item>
+
+        <!-- Remove dividers for cleaner look -->
+        <item name="android:divider">@null</item>
+        <item name="android:listDivider">@null</item>
+    </style>
+
+    <!-- Green ActionBar -->
+    <style name="GreenActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/action_bar_green</item>
+        <item name="android:titleTextStyle">@style/GreenActionBarTitle</item>
+        <item name="android:subtitleTextStyle">@style/GreenActionBarSubtitle</item>
+        <!-- For Holo theme compatibility -->
+        <item name="android:backgroundStacked">@color/action_bar_green</item>
+        <item name="android:backgroundSplit">@color/action_bar_green</item>
+    </style>
+
+    <!-- ActionBar Title -->
+    <style name="GreenActionBarTitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/textOnDark</item> <!-- Lime green text -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ActionBar Subtitle -->
+    <style name="GreenActionBarSubtitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/light_green</item> <!-- Light green text -->
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Green Button -->
+    <style name="GreenButton" parent="android:Widget.Holo.Button">
+        <item name="android:background">@drawable/rounded_button_green</item>
+        <item name="android:textColor">@color/button_text</item> <!-- Lime green text -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Tab Widget -->
+    <style name="GreenTabWidget" parent="android:Widget.Holo.TabWidget">
+        <item name="android:background">@color/tab_background</item>
+        <item name="android:divider">@null</item>
+        <item name="android:showDividers">none</item>
+    </style>
+
+    <!-- Individual Tab Style -->
+    <style name="GreenTab" parent="android:Widget.Holo.Tab">
+        <item name="android:background">@drawable/tab_selector</item>
+        <item name="android:textColor">@color/tab_text_unselected</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Card Style for Fragments -->
+    <style name="GreenCard">
+        <item name="android:background">@drawable/card_background_green</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Green ListView -->
+    <style name="GreenListView" parent="android:Widget.Holo.ListView">
+        <item name="android:background">@color/fragment_background</item>
+        <item name="android:cacheColorHint">@color/fragment_background</item>
+        <item name="android:divider">@color/divider_green</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <!-- Green TextView -->
+    <style name="GreenTextView" parent="android:Widget.Holo.TextView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <!-- Green EditText -->
+    <style name="GreenEditText" parent="android:Widget.Holo.EditText">
+        <item name="android:background">@drawable/edittext_background_green</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textHint</item>
+    </style>
+
+    <!-- Green Spinner -->
+    <style name="GreenSpinner" parent="android:Widget.Holo.Spinner">
+        <item name="android:background">@drawable/spinner_background_green</item>
+        <item name="android:popupBackground">@color/card_background</item>
+    </style>
+
+    <!-- Green ProgressBar -->
+    <style name="GreenProgressBar" parent="android:Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progressbar_green</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+</resources>
