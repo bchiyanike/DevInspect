@@ -34,11 +34,11 @@ jobs:
           distribution: 'zulu'
           cache: 'gradle'
 
-      - name: Setup Android SDK (JDK 8 compatible)
+      - name: Setup Android SDK (skip JDK check)
         uses: android-actions/setup-android@v3
         with:
-          cmdline-tools-version: 8.0
           accept-android-sdk-licenses: true
+          sdk-manager-flags: --skip-jdk-version-check
           packages: platform-tools, tools
 
       - name: Make gradlew executable
